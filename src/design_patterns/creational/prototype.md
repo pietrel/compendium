@@ -6,7 +6,7 @@ The Prototype pattern is particularly useful in Rust when you need to create obj
 
 ## Implementation in Rust
 
-In Rust, implementing the Prototype pattern involves defining a trait that serves as the prototype interface and implementing this trait for different concrete prototypes. Here's an example to demonstrate how to implement the Prototype pattern in Rust.
+In Rust, implementing the Prototype pattern involves defining a struct that serves as the prototype and implementing the `Clone` trait for that struct. The `Clone` trait provides a `clone` method that creates a new object with the same properties as the original object. Here's an example to demonstrate how to implement the Prototype pattern in Rust.
 
 ```rust
 #[derive(Clone)]

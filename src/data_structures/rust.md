@@ -123,3 +123,22 @@ fn main() {
     }
 }
 ```
+
+### Queues
+
+A queue is a first in, first out (FIFO) data structure. In Rust, you can implement a queue using a `VecDeque` from the standard library.
+
+```rust
+use std::collections::VecDeque;
+
+fn main() {
+    let mut queue = VecDeque::new();
+    queue.push_back(1);
+    queue.push_back(2);
+    queue.push_back(3);
+
+    while let Some(item) = queue.pop_front() {
+        println!("{}", item);
+    }
+}
+```
