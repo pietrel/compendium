@@ -46,3 +46,21 @@
   - [Docker Compose](docker/docker_compose.md)
   - [Docker Swarm](docker/docker_swarm.md)
   - [KinD](docker/kind.md)
+
+- [Pentesting](pentesting/introduction.md)
+  - [Web Application Security](pentesting/web_application_security.md)
+  - [Network Security](pentesting/network_security.md)
+  - [Wireless Security](pentesting/wireless_security.md)
+  - [Social Engineering](pentesting/social_engineering.md)
+  - [Physical Security](pentesting/physical_security.md)
+  - [Cryptography](pentesting/cryptography.md)
+
+- [Blockchain](blockchain/introduction.md)
+  - [Bitcoin](blockchain/bitcoin.md)
+  - [Ethereum](blockchain/ethereum.md)
+  - [Smart Contracts](blockchain/smart_contracts.md)
+  - [Decentralized Finance](blockchain/decentralized_finance.md)
+  - [Non-Fungible Tokens](blockchain/non_fungible_tokens.md)
+  - [Blockchain Scalability](blockchain/blockchain_scalability.md)
+
+- [Resources](resources.md)
