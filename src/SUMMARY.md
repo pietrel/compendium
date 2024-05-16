@@ -42,6 +42,13 @@
     - [Mediator](design_patterns/behavioral/mediator.md)
     - [Iterator](design_patterns/behavioral/iterator.md)
   - [Structural](design_patterns/structural/introduction.md)
+    - [Adapter](design_patterns/structural/adapter.md)
+    - [Bridge](design_patterns/structural/bridge.md)
+    - [Composite](design_patterns/structural/composite.md)
+    - [Decorator](design_patterns/structural/decorator.md)
+    - [Facade](design_patterns/structural/facade.md)
+    - [Flyweight](design_patterns/structural/flyweight.md)
+    - [Proxy](design_patterns/structural/proxy.md)
   
 - [Architecture](architecture/introduction.md)
   - [Hexagonal Architecture](architecture/hexagonal_architecture.md)
