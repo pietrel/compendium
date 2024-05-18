@@ -49,6 +49,11 @@
     - [Facade](design_patterns/structural/facade.md)
     - [Flyweight](design_patterns/structural/flyweight.md)
     - [Proxy](design_patterns/structural/proxy.md)
+  - [Rust Specific Design Patterns](design_patterns/rust_specific_design_patterns/introduction.md)
+    - [Extension traits](design_patterns/rust_specific_design_patterns/extension_traits.md)
+    - [RAII](design_patterns/rust_specific_design_patterns/raii.md)
+    - [Builder](design_patterns/rust_specific_design_patterns/builder.md)
+    - [Newtype](design_patterns/rust_specific_design_patterns/newtype.md)
   
 - [Architecture](architecture/introduction.md)
   - [Hexagonal Architecture](architecture/hexagonal_architecture.md)
