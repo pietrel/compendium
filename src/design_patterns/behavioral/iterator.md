@@ -48,3 +48,34 @@ fn main() {
     }
 }
 ```
+
+```rust
+struct Fibonnaci {
+    current: u64,
+    next: u64,
+}
+
+impl Iterator for Fibonnaci {
+    type Item = u64;
+    
+    fn next (&mut self) -> Option<Self::Item> {
+        let current = self.current;
+        self.current = self.next;
+        self.next = current + self.next;
+        Some(current)
+    }
+}
+
+fn fibonnaci() -> Fibonnaci {
+    Fibonnaci { current: 0, next: 1 }
+}
+
+fn main() {
+    let mut fib = fibonnaci();
+    for i in 0..=10 {
+        if let Some(n) = fib.next() {
+            println!("{} -> {}", i, n);
+        }
+    }
+}
+```
