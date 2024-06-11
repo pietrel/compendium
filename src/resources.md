@@ -2,7 +2,7 @@
 
 Great resources to learn Rust programming language:
 
-1. [Cargo Book](https://doc.rust-lang.org/beta/cargo/);
+1. [Cargo Book](https://doc.rust-lang.org/stable/cargo/);
 2. [The Rust Programming Language](https://doc.rust-lang.org/book/)
 3. [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
 4. [CQRS and Event Sourcing in Rust](https://doc.rust-cqrs.org/)

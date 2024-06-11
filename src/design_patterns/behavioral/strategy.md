@@ -84,3 +84,7 @@ fn main() {
     println!("Quick sorted: {:?}", data);
 }
 ```
+
+## Further Reading
+[Strategy Pattern by Immaculate Coder](https://immaculate-coder.notion.site/Strategy-Design-Pattern-22dbc76d164e4f61b57daeb0ac5a926b)
+
