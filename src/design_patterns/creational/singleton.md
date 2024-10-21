@@ -45,3 +45,64 @@ fn main() {
     println!("Called {} times", ARRAY.lock().unwrap().len());
 }
 ```
+
+### Implementation in Go
+
+#### Using sync.Once
+
+Go's sync.Once package offers a thread-safe method to initialize a value precisely once. This feature is perfect for implementing the Singleton pattern, eliminating the need for explicit locking mechanisms.
+
+
+```go
+package singleton
+
+import "sync"
+
+type singleton struct{}
+
+var instance *singleton
+var once sync.Once
+
+func GetInstance() *singleton {
+    once.Do(func() {
+        instance = &singleton{}
+    })
+    return instance
+}
+```
+
+#### Using `mutex`
+
+The sync.Mutex provides a locking mechanism to ensure that only one goroutine can access the critical section of code at a time, which is useful for creating and managing the singleton instance safely.
+
+```go
+package singleton
+
+import (
+    "fmt"
+    "sync"
+)
+
+type singleton struct {}
+
+var instance *singleton
+var lock = &sync.Mutex{}
+
+func getInstance() *singleton {
+    if instance == nil {
+        // Only one goroutine at a time can go next
+        lock.Lock()
+        defer lock.Unlock()
+
+        if instance == nil {
+            fmt.Println("Instance created")
+            instance = &singleton{}
+        } else {
+            fmt.Println("Instance exists")
+        }
+    } else {
+        fmt.Println("Instance exists")
+    }
+    return instance
+}
+```
