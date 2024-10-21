@@ -1,8 +1,13 @@
-# CQRS
+# CQS and CQRS
 
-[Command Query Responsibility Segregation (CQRS)](https://doc.rust-cqrs.org/theory_cqrs.html) 
+## Command Query Separation (CQS)
 
-## Introduction to CQRS
+Command Query Separation is a design principle in software engineering that suggests separating methods that modify state (commands) from methods that return results without modifying state (queries). The idea is to keep operations that change the system's state distinct from operations that simply retrieve data. This separation helps in designing clearer, more maintainable code and can enhance the predictability of how changes affect the application. 
+In short, individual methods in an object or service, stating that a method should either be a command (change the system's state) or a query (retrieve data) but not both.
+It is the foundational principle behind CQRS.
+
+## Introduction to Command Query Responsibility Separation (CQRS)
+[Command Query Responsibility Segregation (CQRS)](https://doc.rust-cqrs.org/theory_cqrs.html)
 
 Command Query Responsibility Segregation (CQRS) is an architectural pattern that separates the read and write operations of a data model into distinct interfaces. This approach can significantly enhance the performance, scalability, and security of an application. In this chapter, we will explore how to implement CQRS in a PHP environment, focusing on practical applications and benefits.
 
