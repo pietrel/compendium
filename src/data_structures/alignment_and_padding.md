@@ -89,15 +89,15 @@ fn iterate_and_calculate<T: Summable>(data: &Vec<T>) -> (u64, Duration) {
 #    (total, iteration_time)
 }
 
-#fn repeat_iteration<T: Summable>(data: &Vec<T>, n: usize) -> (u64, Vec<Duration>) {
-#    (0..n)
-#        .map(|_| iterate_and_calculate(data))
-#        .fold((0, Vec::new()), |(total, mut durations), (new_total, duration)| {
-#            durations.push(duration);
-#            (total + new_total, durations)
-#        })
-#}
-#
+fn repeat_iteration<T: Summable>(data: &Vec<T>, n: usize) -> (u64, Vec<Duration>) {
+    (0..n)
+        .map(|_| iterate_and_calculate(data))
+        .fold((0, Vec::new()), |(total, mut durations), (new_total, duration)| {
+            durations.push(duration);
+            (total + new_total, durations)
+        })
+}
+
 fn main() {
 #    println!("Optimized and Suboptimal Structs both hold 11 Bytes of data.");
 #    println!("Size of Suboptimal Struct is {} bytes", mem::size_of::<Suboptimal>());
