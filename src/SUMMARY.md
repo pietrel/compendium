@@ -2,10 +2,10 @@
 
 - [Introduction](readme.md)
 - [Data Structures](data_structures/introduction.md)
-  - [PHP](data_structures/php.md)
-  - [Go](data_structures/go.md)
-  - [Rust](data_structures/rust.md)
-
+    - [PHP](data_structures/php.md)
+    - [Go](data_structures/go.md)
+    - [Rust](data_structures/rust.md)
+    - [Alignment and Padding](data_structures/alignment_and_padding.md)
 
 - [Algorithms](algorithms/introduction.md)
   - [Sorting](algorithms/sorting/introduction.md)
