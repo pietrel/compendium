@@ -107,9 +107,9 @@ fn main() {
 #              unsafe { &(*(0 as *const Suboptimal)).b as *const _ as usize },
 #              unsafe { &(*(0 as *const Suboptimal)).c as *const _ as usize }]);
 #    println!("Field offsets in Optimized: {:?}",
-#             [unsafe { &(*(0 as *const Optimized)).a as *const _ as usize },
-#              unsafe { &(*(0 as *const Optimized)).b as *const _ as usize },
-#              unsafe { &(*(0 as *const Optimized)).c as *const _ as usize }]);
+#             [unsafe { &(*(0 as *const Optimized)).b as *const _ as usize },
+#              unsafe { &(*(0 as *const Optimized)).c as *const _ as usize },
+#              unsafe { &(*(0 as *const Optimized)).a as *const _ as usize }]);
 #
     let n: usize = 3;
 
