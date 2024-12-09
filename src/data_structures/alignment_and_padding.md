@@ -102,6 +102,14 @@ fn main() {
 #    println!("Optimized and Suboptimal Structs both hold 11 Bytes of data.");
 #    println!("Size of Suboptimal Struct is {} bytes", mem::size_of::<Suboptimal>());
 #    println!("Size of Optimized Struct is {} bytes", mem::size_of::<Optimized>());
+#    println!("Field offsets in Suboptimal: {:?}",
+#             [unsafe { &(*(0 as *const Suboptimal)).a as *const _ as usize },
+#              unsafe { &(*(0 as *const Suboptimal)).b as *const _ as usize },
+#              unsafe { &(*(0 as *const Suboptimal)).c as *const _ as usize }]);
+#    println!("Field offsets in Optimized: {:?}",
+#             [unsafe { &(*(0 as *const Optimized)).a as *const _ as usize },
+#              unsafe { &(*(0 as *const Optimized)).b as *const _ as usize },
+#              unsafe { &(*(0 as *const Optimized)).c as *const _ as usize }]);
 #
     let n: usize = 3;
 
