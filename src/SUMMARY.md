@@ -10,12 +10,7 @@
 - [Algorithms](algorithms/introduction.md)
     - [Sorting](algorithms/sorting/introduction.md)
         - [Bubble Sort](algorithms/sorting/bubble_sort.md)
-        - [Selection Sort](algorithms/sorting/selection_sort.md)
-        - [Insertion Sort](algorithms/sorting/insertion_sort.md)
-        - [Merge Sort](algorithms/sorting/merge_sort.md)
         - [Quick Sort](algorithms/sorting/quick_sort.md)
-        - [Heap Sort](algorithms/sorting/heap_sort.md)
-        - [Counting Sort](algorithms/sorting/counting_sort.md)
         - [Radix Sort](algorithms/sorting/radix_sort.md)
         - [Bucket Sort](algorithms/sorting/bucket_sort.md)
 
