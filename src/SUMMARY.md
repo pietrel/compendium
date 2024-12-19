@@ -12,7 +12,7 @@
         - [Bubble Sort](algorithms/sorting/bubble_sort.md)
         - [Quick Sort](algorithms/sorting/quick_sort.md)
         - [Radix Sort](algorithms/sorting/radix_sort.md)
-        - [Bucket Sort](algorithms/sorting/bucket_sort.md)
+    - [Breadth-First Search](algorithms/breadth-first-search.md)
 
 - [Design Patterns](design_patterns/introduction.md)
     - [Creational](design_patterns/creational/introduction.md)
